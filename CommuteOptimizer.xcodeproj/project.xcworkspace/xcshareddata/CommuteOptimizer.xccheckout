@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C398F041-60A5-4C44-A28B-1508C215B33C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CommuteOptimizer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22BB8A76DCA4B9FF822DB897EFDA375510B1B35D</key>
+		<string>https://github.com/MattyAyOh/CommuteOptimizer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CommuteOptimizer/CommuteOptimizer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22BB8A76DCA4B9FF822DB897EFDA375510B1B35D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MattyAyOh/CommuteOptimizer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22BB8A76DCA4B9FF822DB897EFDA375510B1B35D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22BB8A76DCA4B9FF822DB897EFDA375510B1B35D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CommuteOptimizer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
