@@ -14,11 +14,11 @@
 		<string>https://github.com/MattyAyOh/CommuteOptimizer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CommuteOptimizer/CommuteOptimizer.xcodeproj</string>
+	<string>CommuteOptimizer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>22BB8A76DCA4B9FF822DB897EFDA375510B1B35D</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/MattyAyOh/CommuteOptimizer.git</string>
