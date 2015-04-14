@@ -31,12 +31,22 @@ class JennasViewController: UIViewController {
          self.helloTextField.text = "oh lala"
          self.currentImageNum = 2
       }
-      else if( self.currentImageNum == 2 ) {
+      else if( self.currentImageNum == 4 ) {
          self.bahamasImageView.image = UIImage(named: "desert")
          self.helloTextField.text = "man it's hot in here"
          self.currentImageNum = 1
       }
+      else if( self.currentImageNum == 2 ) {
+         self.bahamasImageView.image = UIImage(named: "hair")
+         self.helloTextField.text = "a young matchu"
+         self.currentImageNum = 3
+      }
       else if( self.currentImageNum == 3 ) {
+         self.bahamasImageView.image = UIImage(named: "biebs")
+         self.helloTextField.text = "hey looks it's JB"
+         self.currentImageNum = 4
+      }
+      else if( self.currentImageNum == 4 ) {
          NSLog("3")
       }
       else {
