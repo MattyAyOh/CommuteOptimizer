@@ -8,24 +8,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class JennasViewController: UIViewController {
    @IBOutlet weak var helloTextField: UILabel!
-   @IBOutlet weak var bahamasImageView: UIImageView!
-    
+   @IBOutlet var bahamasImageView: UIImageView!
+   var currentImageNum: Int!
+
+   
    override func viewDidLoad() {
       super.viewDidLoad()
-      self.helloTextField.text = "altoids"
+      self.bahamasImageView.image = UIImage(named: "desert")
+      self.currentImageNum = 1
+      
       // Do any additional setup after loading the view, typically from a nib.
     }
 
 
-   override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
-   }
 
    @IBAction func clickMePressed(sender: AnyObject) {
       NSLog("Shalom")
+      if( self.currentImageNum == 1 ) {
+         self.bahamasImageView.image = UIImage(named: "beach")
+         self.helloTextField.text = "oh lala"
+         self.currentImageNum = 2
+      }
+      else if( self.currentImageNum == 2 ) {
+         self.bahamasImageView.image = UIImage(named: "desert")
+         self.helloTextField.text = "man it's hot in here"
+         self.currentImageNum = 1
+      }
+      else if( self.currentImageNum == 3 ) {
+         NSLog("3")
+      }
+      else {
+         NSLog("It is not 1, 2, or 3")
+      }
+      
+      
    }
 
 }
