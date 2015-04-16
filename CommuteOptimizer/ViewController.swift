@@ -23,6 +23,8 @@ class JennasViewController: UIViewController {
     }
 
 
+   @IBAction func happyPressed(sender: AnyObject) {
+   }
 
    @IBAction func clickMePressed(sender: AnyObject) {
       NSLog("Shalom")
@@ -30,11 +32,6 @@ class JennasViewController: UIViewController {
          self.bahamasImageView.image = UIImage(named: "beach")
          self.helloTextField.text = "oh lala"
          self.currentImageNum = 2
-      }
-      else if( self.currentImageNum == 4 ) {
-         self.bahamasImageView.image = UIImage(named: "desert")
-         self.helloTextField.text = "man it's hot in here"
-         self.currentImageNum = 1
       }
       else if( self.currentImageNum == 2 ) {
          self.bahamasImageView.image = UIImage(named: "hair")
@@ -47,7 +44,12 @@ class JennasViewController: UIViewController {
          self.currentImageNum = 4
       }
       else if( self.currentImageNum == 4 ) {
-         NSLog("3")
+         self.bahamasImageView.image = UIImage(named: "desert")
+         self.helloTextField.text = "man it's hot in here"
+         self.currentImageNum = 1
+      }
+      else if( self.currentImageNum == 5 ) {
+         NSLog("5")
       }
       else {
          NSLog("It is not 1, 2, or 3")
