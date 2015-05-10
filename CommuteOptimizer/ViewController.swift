@@ -25,6 +25,9 @@ class JennasViewController: UIViewController {
 
    @IBAction func happyPressed(sender: AnyObject) {
    }
+   
+   @IBAction func textTyped( sender: AnyObject) {
+   }
 
    @IBAction func clickMePressed(sender: AnyObject) {
       NSLog("Shalom")
@@ -54,9 +57,9 @@ class JennasViewController: UIViewController {
       else {
          NSLog("It is not 1, 2, or 3")
       }
-      
-      
    }
+   
+
 
 }
 

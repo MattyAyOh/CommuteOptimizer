@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Jennas View Controller-->
@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="300" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A77-EV-lPy">
@@ -28,14 +28,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bahamas-White-Sandy-Beach-" translatesAutoresizingMaskIntoConstraints="NO" id="nfP-1p-do9">
                                 <rect key="frame" x="30" y="218" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="man it's hot in here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMr-Tu-v8G">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="man it's hot in here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMr-Tu-v8G">
                                 <rect key="frame" x="38" y="55" width="246" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="s94-XS-esF">
+                                <rect key="frame" x="42" y="165" width="216" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <connections>
+                                    <action selector="textTyped:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="wgc-Kq-w2A"/>
+                                </connections>
+                            </textField>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="QPs-dH-wAh">
+                                <rect key="frame" x="109" y="365" width="39" height="37"/>
+                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceP-Pq-oVZ">
-                                <rect key="frame" x="72" y="410" width="157" height="102"/>
+                                <rect key="frame" x="72" y="365" width="157" height="102"/>
                                 <state key="normal" title="Be Happy">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -46,7 +57,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s94-XS-esF" firstAttribute="centerX" secondItem="NMr-Tu-v8G" secondAttribute="centerX" constant="-11" id="wSp-Xh-OAt"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Page 2" id="eiG-Bn-Dp3">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="UvC-I7-Rio" kind="push" id="fG2-Gw-4pD"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="1Vd-nG-SuY"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="600"/>
                     <connections>
@@ -56,14 +79,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="307" y="366"/>
+            <point key="canvasLocation" x="294" y="390"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Title-->
         <scene sceneID="CXm-7H-Wnq">
             <objects>
                 <tableViewController id="GfL-aT-raF" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zvW-ls-Id0">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -79,7 +102,7 @@
                             <outlet property="delegate" destination="GfL-aT-raF" id="gqd-Nf-CCo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="qLf-oG-wc0"/>
+                    <navigationItem key="navigationItem" title="Title" id="LYN-Zc-e0y"/>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="show" id="sBf-dP-R80"/>
                     </connections>
@@ -88,36 +111,58 @@
             </objects>
             <point key="canvasLocation" x="-88" y="583"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="vya-ur-YfI">
             <objects>
-                <viewController id="UvC-I7-Rio" sceneMemberID="viewController">
+                <viewController id="UvC-I7-Rio" customClass="myViewController2ViewController" customModule="CommuteOptimizer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nI0-T4-LMl"/>
                         <viewControllerLayoutGuide type="bottom" id="qYf-gd-K6E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="i0N-x2-NbM">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="300" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="fvW-8I-Bnk">
+                                <rect key="frame" x="70" y="238" width="161" height="157"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nU3-qk-XST">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                <items>
+                                    <navigationItem title="2" id="GWm-KE-2XV">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="9gG-qc-ht4">
+                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="show" id="sRO-eP-4ck"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Ljl-9v-q3Z"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0l6-Tf-L8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="650" y="366"/>
+            <point key="canvasLocation" x="656" y="366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="44e-1h-sCP">
             <objects>
-                <navigationController id="4oi-AZ-ZQk" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="4oi-AZ-ZQk" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="600"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZRp-LY-Kfe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="ZRp-LY-Kfe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="NCu-UC-I94">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="GfL-aT-raF" kind="relationship" relationship="rootViewController" id="Lgt-nJ-42a"/>
                     </connections>
@@ -129,5 +174,10 @@
     </scenes>
     <resources>
         <image name="Bahamas-White-Sandy-Beach-" width="1500" height="938"/>
+        <image name="smile" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sRO-eP-4ck"/>
+        <segue reference="fG2-Gw-4pD"/>
+    </inferredMetricsTieBreakers>
 </document>
