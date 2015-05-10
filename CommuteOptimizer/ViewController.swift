@@ -13,6 +13,12 @@ class JennasViewController: UIViewController {
    @IBOutlet var bahamasImageView: UIImageView!
    var currentImageNum: Int!
 
+   @IBOutlet weak var UserTextField: UITextField!
+   @IBAction func GoButton(sender: AnyObject) {
+      helloTextField.text = UserTextField.text
+   }
+   
+   
    
    override func viewDidLoad() {
       super.viewDidLoad()

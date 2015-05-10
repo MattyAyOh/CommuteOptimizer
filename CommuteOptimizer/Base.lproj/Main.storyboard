@@ -55,6 +55,15 @@
                                     <segue destination="UvC-I7-Rio" kind="show" id="dfo-gh-ayK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rf-Xf-CWJ">
+                                <rect key="frame" x="254" y="164" width="30" height="30"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="htv-gw-vot"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -73,6 +82,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="600"/>
                     <connections>
+                        <outlet property="UserTextField" destination="s94-XS-esF" id="nby-BN-hUN"/>
                         <outlet property="bahamasImageView" destination="nfP-1p-do9" id="Xlw-vA-e9j"/>
                         <outlet property="helloTextField" destination="NMr-Tu-v8G" id="u6c-IM-v9S"/>
                     </connections>
